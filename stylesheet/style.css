@@ -1,8 +1,30 @@
-body{
-    background-color: #000000;
-    color: white;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.para{
-    background-color: aqua;
+.wrapper{
+    position: relative;
+    width: 80%;
+    margin: auto;
+
+}
+
+.navbaar{
+   position: sticky;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 10px;
+}
+
+.logo{
+   display: flex;
+   gap: 10px;
+}
+
+.about-section{
+    display: flex;
+    gap: 10px;
 }
