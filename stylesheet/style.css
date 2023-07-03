@@ -25,7 +25,7 @@
   gap: 16px;
   align-items: center;
   /* background-image: linear-gradient(#ababab, #7c7c7c); */
-  background: radial-gradient(circle, rgba(251,182,216,1) 30%, rgba(255,174,197,1) 100%);
+  background: radial-gradient(circle, rgba(251, 182, 216, 1) 30%, rgba(255, 174, 197, 1) 100%);
 
 
 }
@@ -59,10 +59,11 @@
   background-image: linear-gradient(to right, #000000, #424242);
 
 }
-.logo-img{
+
+.logo-img {
   width: 130px;
   height: 45px;
-   
+
 }
 
 .nav-right {
@@ -92,7 +93,7 @@
 
 .fa-search {
   color: #f2f2f2;
-  
+
 }
 
 .about-section {
@@ -127,10 +128,10 @@
   background-color: #ffffffea;
   box-shadow: 1px 1px 3px 2px #aeaeae;
   border: 2px solid #000000;
- 
+
 }
 
-.login-btn:hover.login-btn a{
+.login-btn:hover.login-btn a {
   color: #0062ff;
 }
 
@@ -155,7 +156,7 @@
   background: linear-gradient(90deg, rgb(188, 225, 255) 0%, rgb(192, 255, 230) 50%, rgb(198, 255, 213) 100%);
 
   padding: 4px;
- 
+
 }
 
 .lower-navbaar a {
@@ -165,7 +166,7 @@
   font-size: 16px;
 }
 
-.lower-navbaar a:hover{
+.lower-navbaar a:hover {
   text-shadow: 2px 4px 3px #499276;
 }
 
@@ -182,7 +183,7 @@ img {
   /* max-width: 1000px; */
   position: relative;
   margin: auto;
-  
+
 }
 
 /* Next & previous buttons */
@@ -316,4 +317,56 @@ img {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+
+/* Footer CSS */
+.footer {
+  display: grid;
+  /* grid-template-columns: 20vw 20vw 20vw 20vw; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: #000000;
+  column-gap: 2px;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  
+}
+
+.footer-content {
+  /* background-color: #505050; */
+   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 40vh;
+  padding-left: 30px;
+  padding-top: 10px;
+  font-family: Arial Narrow;
+
+}
+.footer-head{
+  padding-bottom: 10px;
+  font-size: 22px;
+  color: #f2f2f2;
+  padding-left: 4px;
+
+}
+.footer-head:hover{
+  text-decoration: underline;
+ cursor: pointer;
+}
+
+.footer-content .footer-link{
+  color: #e2e2e2;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 4px;
+}
+
+.footer-link:hover{
+  color: #939393;
+  cursor: pointer;
+  text-decoration: underline;
 }
