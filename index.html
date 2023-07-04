@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project-1</title>
-    <link rel="stylesheet" href="./stylesheet/style.css">
-</head>
-<body>
-   <div class="wrapper">
+    <link rel="stylesheet" href="./stylesheet/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
 
       <!-- navbaar -->
       <div class="all-navbaar">
+        <!--Upper navbaar -->
+        <div class="upper-navbaar">
+          <a href="#" class="top-link">
+            <i class="fa fa-mobile icon"></i>
+            <p>Get App</p>
+          </a>
+          <a href="#" class="top-link">
+            <i class="fa fa-location icon"></i>
+            <p>Store & Events</p>
+          </a>
+          <a href="#" class="top-link">
+            <i class="fa fa-gift icon"></i>
+            <p>Gift Card</p>
+          </a>
+          <a href="#" class="top-link">
+            <i class="fa fa-question icon"></i>
+            <p>Help</p>
+          </a>
+        </div>
 
-         <!--Upper navbaar -->
-         <div class="upper-navbaar">
-            <a href="#" class="top-link">
-               <i class="fa fa-mobile icon"></i>
-               <p class="top-para">Get App</p>
-            </a>
-            <a href="#" class="top-link">
-               <i class="fa fa-location icon"></i>
-               <p class="top-para">Store & Events</p>
-            </a>
-            <a href="#" class="top-link">
-               <i class="fa fa-gift icon"></i>
-               <p class="top-para">Gift Card</p>
-            </a>
-            <a href="#" class="top-link">
-               <i class="fa fa-question icon"></i>
-               <p class="top-para">Help</p>
-            </a>
-         </div>
+        <!--Middle navbaar -->
+        <div class="middle-navbaar">
+          <!-- Logo -->
+          <img src="./photos/logo-white.png" alt="Logo" class="logo-img" />
 
-         <!--Middle navbaar -->
-         <div class="middle-navbaar">
-
-            <!-- Logo -->
-            <img src="./photos/main-logo.png" height="70px" alt="Logo">
-
-            <!-- Search baar -->
-            <div>
-               <input type="text">
-               <i class="fa fa-search"></i>
+          <!-- Search baar -->
+          <div class="nav-right">
+            <div class="search">
+              <i class="fa fa-search"></i>
+              <input type="text" class="search-box" />
             </div>
 
             <!-- About Section -->
@@ -49,164 +49,401 @@
               <a href="#">Categories</a>
               <a href="#">Brands</a>
               <a href="#">Fashion</a>
-              <a href="#">Contect Me</a>
+              <a href="#">Contact</a>
               <a href="#">About</a>
             </div>
-           <!-- Login & Sign in -->
-            <div class="login-sign-btn">
-               <a href="./pages/login.html"><button class="login-btn">Log In</button></a>
-               <a href="./pages/sighnup.html">Sign In</a>
-            </div>
-         </div>
+            <!-- Login & Sign in -->
+            <!-- <div class="login-btn">
+                  <a href="./pages/login.html">Log In</a> -->
+            <!-- <a href="./pages/sighnup.html">Sign In</a> 
+                </div> -->
+            <button class="login-btn">
+              <a href="./pages/login.html">Log in</a>
+            </button>
+          </div>
+        </div>
 
-         <!-- Lower Navbar -->
-         <div class="lower-navbaar">
-            <a href="#">Sarees</a>
-            <a href="#">Suits</a>
-            <a href="#">Lehengas</a>
-            <a href="#">Unique Collection</a>
-            <a href="#">Celebrity Wear</a>
-            <a href="#">Saree Gown</a>
-            <a href="#">Dhoti Saree</a>
-            <a href="#">Men</a>
-            <a href="#">Accessories</a>
-            <a href="#">Premium Collection</a>
-         </div>
-
+        <!-- Lower Navbar -->
+        <div class="lower-navbaar">
+          <a href="#">Sarees</a>
+          <a href="#">Suits</a>
+          <a href="#">Lehengas</a>
+          <!-- <a href="#">Unique Collection</a> -->
+          <!-- <a href="#">Celebrity Wear</a> -->
+          <a href="#">Saree Gown</a>
+          <a href="#">Dhoti Saree</a>
+          <a href="#">Men's Wear</a>
+          <a href="#">Accessories</a>
+          <!-- <a href="#">Premium Collection</a> -->
+        </div>
       </div>
 
       <!-- Sliding - Container -->
       <div>
-         <div class="slideshow-container">
+        <div class="slideshow-container">
+          <a href="#">
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="./photos/sliding-img/image-1.jpg" style="width: 100%" />
+            </div>
+          </a>
+          <a href="">
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="./photos/sliding-img/image-2.jpg" style="width: 100%" />
+            </div>
+          </a>
+          <a href="">
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="./photos/sliding-img/image-3.jpg" style="width: 100%" />
+            </div>
+          </a>
+          <a href="">
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="./photos/sliding-img/image-4.jpg" style="width: 100%" />
+            </div>
+          </a>
+          <a href="">
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="./photos/sliding-img/image-5.jpg" style="width: 100%" />
+            </div>
+          </a>
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br />
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
 
-            <a href="#">
-               <div class="mySlides fade">
-                  <div class="numbertext"></div>
-                  <img src="./photos/sliding-img/image-1.jpg" style="width:100%">
-                </div>
-            </a>
-            <a href="">
-               <div class="mySlides fade">
-               <div class="numbertext"></div>
-               <img src="./photos/sliding-img/image-2.jpg" style="width:100%">
-             </div>
-            </a>
-            <a href="">
-               <div class="mySlides fade">
-               <div class="numbertext"></div>
-               <img src="./photos/sliding-img/image-3.jpg" style="width:100%">
-             </div>
-            </a>
-            <a href="">
-               <div class="mySlides fade">
-               <div class="numbertext"></div>
-               <img src="./photos/sliding-img/image-4.jpg" style="width:100%">
-             </div>
-            </a>
-            <a href="">
-               <div class="mySlides fade">
-               <div class="numbertext"></div>
-               <img src="./photos/sliding-img/image-5.jpg" style="width:100%">
-             </div>
-            </a>
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-            
-         </div>
-         <br>
-         <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span> 
-              <span class="dot" onclick="currentSlide(3)"></span> 
-              <span class="dot" onclick="currentSlide(4)"></span> 
-              <span class="dot" onclick="currentSlide(5)"></span> 
-         </div>
+        <div class="sale-photo">
+         <img src="./photos/MainPage-AllPhoto/sale-photo.png" height="175px">
+        </div>
       </div>
-
+       
+      <!-- Product Container -->
       <div class="main-product-container">
-         <div class="all-product">
+        <div class="all-product">
+          <a href="#">
+            <div class="product-box">
+              <div class="image-first">
+                <img
+                  class="photos-box-1"
+                  src="./photos/product-imgg/1-1.jpg"
+                  height="300px"
+                  alt="photo"
+                />
+              </div>
+              <div class="image-second">
+                <img
+                  class="photos-box-1"
+                  src="./photos/product-imgg/1-2.jpg"
+                  height="145px"
+                  alt="photo"
+                />
+                <img
+                  class="photos-box-1"
+                  src="./photos/product-imgg/1-3.jpg"
+                  height="145px"
+                  alt="photo"
+                />
+              </div>
+            </div>
+          </a>
 
-            <a href="#">
-               <div class="product-box">
-                  <div class="image-first">
-                     <img class="photos-box-1" src="./photos/product-imgg/1-1.jpg" height="300px" alt="photo">
-                  </div>
-                  <div class="image-second">
-                     <img class="photos-box-1" src="./photos/product-imgg/1-2.jpg" height="145px"  alt="photo">
-                     <img class="photos-box-1" src="./photos/product-imgg/1-3.jpg" height="145px" alt="photo">
-                  </div>
-               </div>
-            </a>
+          <a href="#">
+            <div class="product-box">
+              <div class="image-first">
+                <img
+                  class="photos-box-1"
+                  src="./photos/product-imgg/2-1.jpg"
+                  height="300px"
+                  width="175px"
+                  alt="photo"
+                />
+              </div>
+              <div class="image-second">
+                <img
+                  class="photos-box-1"
+                  src="./photos/product-imgg/2-2.jpg"
+                  height="145px"
+                  alt="photo"
+                />
+                <img
+                  class="photos-box-1"
+                  src="./photos/product-imgg/2-3.jpg"
+                  height="145px"
+                  alt="photo"
+                />
+              </div>
+            </div>
+          </a>
 
-            <a href="#">
-               <div class="product-box">
-                  <div class="image-first">
-                     <img class="photos-box-1" src="./photos/product-imgg/2-1.jpg" height="300px" width="175px" alt="photo">
-                  </div>
-                  <div class="image-second">
-                     <img class="photos-box-1" src="./photos/product-imgg/2-2.jpg" height="145px"  alt="photo">
-                     <img class="photos-box-1" src="./photos/product-imgg/2-3.jpg" height="145px" alt="photo">
-                  </div>
-               </div>
-            </a>
+          <a href="#">
+            <div class="product-box">
+              <div class="image-first">
+                <img
+                  class="photos-box-1"
+                  src="./photos/product-imgg/3-1.jpg"
+                  height="300px"
+                  width="185px"
+                  alt="photo"
+                />
+              </div>
+              <div class="image-second">
+                <img
+                  class="photos-box-1"
+                  src="./photos/product-imgg/3-2.jpg"
+                  height="145px"
+                  alt="photo"
+                />
+                <img
+                  class="photos-box-1"
+                  src="./photos/product-imgg/3-3.jpg"
+                  height="145px"
+                  alt="photo"
+                />
+              </div>
+            </div>
+          </a>
 
-            <a href="#">
-               <div class="product-box">
-                  <div class="image-first">
-                     <img class="photos-box-1" src="./photos/product-imgg/3-1.jpg" height="300px" width="185px" alt="photo">
-                  </div>
-                  <div class="image-second">
-                     <img class="photos-box-1" src="./photos/product-imgg/3-2.jpg" height="145px"  alt="photo">
-                     <img class="photos-box-1" src="./photos/product-imgg/3-3.jpg" height="145px" alt="photo">
-                  </div>
-               </div>
-            </a>
+          <a href="#">
+            <div class="product-box">
+              <div class="image-first">
+                <img
+                  class="photos-box-1"
+                  src="./photos/product-imgg/4-1.jpg"
+                  height="300px"
+                  width="175px"
+                  alt="photo"
+                />
+              </div>
+              <div class="image-second">
+                <img
+                  class="photos-box-1"
+                  src="./photos/product-imgg/4-2.jpg"
+                  height="145px"
+                  alt="photo"
+                />
+                <img
+                  class="photos-box-1"
+                  src="./photos/product-imgg/4-3.jpg"
+                  height="145px"
+                  alt="photo"
+                />
+              </div>
+            </div>
+          </a>
 
-            <a href="#">
-               <div class="product-box">
-                  <div class="image-first">
-                     <img class="photos-box-1" src="./photos/product-imgg/4-1.jpg" height="300px" width="175px" alt="photo">
-                  </div>
-                  <div class="image-second">
-                     <img class="photos-box-1" src="./photos/product-imgg/4-2.jpg" height="145px"  alt="photo">
-                     <img class="photos-box-1" src="./photos/product-imgg/4-3.jpg" height="145px" alt="photo">
-                  </div>
-               </div>
-            </a>
+          <a href="#">
+            <div class="product-box">
+              <div class="image-first">
+                <img
+                  class="photos-box-1"
+                  src="./photos/product-imgg/5-1.jpg"
+                  height="300px"
+                  width="175px"
+                  alt="photo"
+                />
+              </div>
+              <div class="image-second">
+                <img
+                  class="photos-box-1"
+                  src="./photos/product-imgg/5-2.jpg"
+                  height="145px"
+                  alt="photo"
+                />
+                <img
+                  class="photos-box-1"
+                  src="./photos/product-imgg/5-3.jpg"
+                  height="145px"
+                  alt="photo"
+                />
+              </div>
+            </div>
+          </a>
 
-            <a href="#">
-               <div class="product-box">
-                  <div class="image-first">
-                     <img class="photos-box-1" src="./photos/product-imgg/5-1.jpg" height="300px" width="175px" alt="photo">
-                  </div>
-                  <div class="image-second">
-                     <img class="photos-box-1" src="./photos/product-imgg/5-2.jpg" height="145px"  alt="photo">
-                     <img class="photos-box-1" src="./photos/product-imgg/5-3.jpg" height="145px" alt="photo">
-                  </div>
-               </div>
-            </a>
-
-            <a href="#">
-               <div class="product-box">
-                  <div class="image-first">
-                     <img class="photos-box-1" src="./photos/product-imgg/6-1.jpg" height="300px" width="185px" alt="photo">
-                  </div>
-                  <div class="image-second">
-                     <img class="photos-box-1" src="./photos/product-imgg/6-2.jpg" height="145px"  alt="photo">
-                     <img class="photos-box-1" src="./photos/product-imgg/6-3.jpg" height="145px" alt="photo">
-                  </div>
-               </div>
-            </a>
-
-         </div>
+          <a href="#">
+            <div class="product-box">
+              <div class="image-first">
+                <img
+                  class="photos-box-1"
+                  src="./photos/product-imgg/6-1.jpg"
+                  height="300px"
+                  width="185px"
+                  alt="photo"
+                />
+              </div>
+              <div class="image-second">
+                <img
+                  class="photos-box-1"
+                  src="./photos/product-imgg/6-2.jpg"
+                  height="145px"
+                  alt="photo"
+                />
+                <img
+                  class="photos-box-1"
+                  src="./photos/product-imgg/6-3.jpg"
+                  height="145px"
+                  alt="photo"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+        <img src="./photos/MainPage-AllPhoto/9-0394013001687869773.png" alt="">
       </div>
       
+      <!-- Mens Wear Container -->
+      <div class="mans-wear-sectiion">
+         <div class="mains-photo-div">
+            <img src="./photos/MainPage-AllPhoto/1,1-2,3/1.png" class="photo-mans" height="380px" alt="">
+         </div>
+         
+         <div class="mains-photo-div">
+            <img src="./photos/MainPage-AllPhoto/1,1-2,3/1-2.png" class="photo-mans" height="380px" alt="">
+         </div>
+
+         <div class="mains-photo-div">
+            <img src="./photos/MainPage-AllPhoto/1,1-2,3/3.png" class="photo-mans" height="380px" alt="">
+         </div>
+
+         <div class="mains-photo-div">
+            <img src="./photos/MainPage-AllPhoto/1,1-2,3/4.png" class="photo-mans" height="380px" alt="">
+         </div>
+
+         <div class="mains-photo-div">
+            <img src="./photos/MainPage-AllPhoto/1,1-2,3/5.png" class="photo-mans" height="380px" alt="">
+         </div>
+
+         <div class="mains-photo-div">
+            <img src="./photos/MainPage-AllPhoto/1,1-2,3/6.png" class="photo-mans" height="380px" alt="">
+         </div>
+
+      </div>
 
 
-      
-   </div>
+      <!-- ladies offer nad new product -->
+      <div class="main-ladies-wear-div">
+         <div>
+            <img src="./photos/MainPage-AllPhoto/ladies/ezgif.com-gif-maker.png" height="570px" alt="">
+         </div>
 
-   <script src="https://kit.fontawesome.com/c33a357a73.js" crossorigin="anonymous"></script>
-   <script src="./javascript/script.js"></script>
-</body>
+         <div class="ladies-product-div">
+            <div class="ladies-photo-div">
+                 <img src="./photos/MainPage-AllPhoto/ladies/1.jpg" height="400px" alt="">
+            </div>
+            <div class="ladies-photo-div">
+                 <img src="./photos/MainPage-AllPhoto/ladies/2.jpg" height="400px" alt="">
+            </div>
+            <div class="ladies-photo-div">
+                 <img src="./photos/MainPage-AllPhoto/ladies/3.jpg" height="400px" alt="">
+            </div>
+            <div class="ladies-photo-div">
+                 <img src="./photos/MainPage-AllPhoto/ladies/4.jpg" height="400px" alt="">
+            </div>
+            <div class="ladies-photo-div">
+                 <img src="./photos/MainPage-AllPhoto/ladies/5.jpg" height="400px" alt="">
+            </div>
+            <div class="ladies-photo-div">
+                 <img src="./photos/MainPage-AllPhoto/ladies/6.jpg" height="400px" alt="">
+            </div>
+            <div class="ladies-photo-div">
+                 <img src="./photos/MainPage-AllPhoto/ladies/7.jpg" height="400px" alt="">
+            </div>
+            <div class="ladies-photo-div">
+                 <img src="./photos/MainPage-AllPhoto/ladies/8.jpg" height="400px" alt="">
+            </div>
+         </div>
+      </div>
+
+      <!-- Kids Wear Container -->
+      <div class="kids-main-container">
+         <div class="kids-upper-container">
+            <img src="./photos/MainPage-AllPhoto/Kids Photo/offer-1.webp" height="280px" alt="">
+            <img src="./photos/MainPage-AllPhoto/Kids Photo/offer-2.webp" height="280px" alt="">
+            <img src="./photos/MainPage-AllPhoto/Kids Photo/offer-3.webp" height="280px" alt="">
+         </div>
+         <div class="kids-lower-container">
+            <div>
+               <img src="./photos/MainPage-AllPhoto/Kids Photo/main-1.png" height="600px" alt="">
+            </div>
+            <div class="">
+               <img src="./photos/MainPage-AllPhoto/Kids Photo/center-1.webp" height="120px" alt="">
+               <img src="./photos/MainPage-AllPhoto/Kids Photo/center-2.webp" height="211px" alt="">
+               <img src="./photos/MainPage-AllPhoto/Kids Photo/center-3.webp" height="205px" alt="">
+            </div>
+            <div>
+               <img src="./photos/MainPage-AllPhoto/Kids Photo/main-1.png" height="600px" alt="">
+            </div>
+         </div>
+      </div>
+
+
+      <!-- Footer Part -->
+      <div class="footer">
+        <div class="footer-content">
+          <h3 class="footer-head">Quick Links</h3>
+          <a href="#" class="footer-link">Order Now </a>
+          <a href="about.html" class="footer-link">About Us </a>
+          <a href="contact.html" class="footer-link">Contact Us</a>
+          <a href="#" class="footer-link">Continue Shopping</a>
+        </div>
+
+        <div class="footer-content">
+          <h3 class="footer-head">Contact Info</h3>
+          <a href="tel:+123-456-7890" class="footer-link"
+            ><i class="fas fa-phone"></i> +123-456-7890
+          </a>
+          <p class="footer-link">
+            <i class="fas fa-clock"></i> 7:00 am - 10:00 pm
+          </p>
+          <a href="mailto:world-s-class-fashion@gmail.com" class="footer-link">
+            <i class="fas fa-envelope"></i> world-s-class-fashion@gmail.com
+          </a>
+          <p class="footer-link">
+            <i class="fas fa-location"></i> abcde, India
+          </p>
+        </div>
+
+        <div class="footer-content">
+          <h3 class="footer-head">Follow Us</h3>
+          <a href="#" class="footer-link">
+            <i class="fab fa-facebook-f"></i> facebook
+          </a>
+          <a href="#" class="footer-link">
+            <i class="fab fa-twitter"></i> twitter
+          </a>
+          <a href="#" class="footer-link">
+            <i class="fab fa-instagram"></i> instagram
+          </a>
+          <a href="#" class="footer-link">
+            <i class="fab fa-youtube"></i> youtube</a
+          >
+        </div>
+
+        <div class="footer-content">
+          <h3 class="footer-head">Help</h3>
+          <a href="#" class="footer-link">Payments</a>
+          <a href="#" class="footer-link">Shipping</a>
+          <a href="#" class="footer-link">Cancellation & Returns</a>
+          <a href="#" class="footer-link">FAQ</a>
+        </div>
+      </div>
+
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/c33a357a73.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./javascript/script.js"></script>
+  </body>
 </html>
