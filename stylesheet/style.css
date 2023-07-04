@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
+
 .wrapper{
     position: relative;
     margin: auto;
@@ -13,11 +18,10 @@
 }
 
 .upper-navbaar{
+    text-align: right;
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 70px;
-    background-color: #ffb8d7;
+    background-image: url("https://e0.pxfuel.com/wallpapers/667/395/desktop-wallpaper-gradient-abstract-blue-pink-vivo.jpg");
     padding: 5px;
 }
 
@@ -31,7 +35,7 @@
     align-items: center;
     justify-content: center;
     gap:70px;
-    padding: 20px;
+    /* padding: 10px; */
 }
 
 .about-section{
@@ -42,10 +46,9 @@
 
 .lower-navbaar{
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap:50px;
-    background-color: #f178b5;
+    background-color: #FF647F;
+    background-image: cover;
     padding: 5px;
 }
 
